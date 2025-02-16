@@ -70,3 +70,9 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# Игнорировать всё в Assets...
+/Assets/*
+# ... но не игнорировать папку Game и всё её содержимое
+!/Assets/Game/
+!/Assets/Game/**
