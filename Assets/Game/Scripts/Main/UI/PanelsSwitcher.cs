@@ -1,21 +1,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PanelsSwitcher : MonoBehaviour
+namespace SmartStep.UI
 {
-    [SerializeField] private List<RectTransform> _disablePanels;
-    [SerializeField] private List<RectTransform> _enablePanels;
-
-    public void DoSwitch()
+    public class PanelsSwitcher : MonoBehaviour
     {
-        foreach (var panel in _disablePanels)
-        {
-            panel.gameObject.SetActive(false);
-        }
+        [SerializeField] private List<RectTransform> _disablePanels;
+        [SerializeField] private List<RectTransform> _enablePanels;
 
-        foreach (var panel in _enablePanels)
+        public void DoSwitch()
         {
-            panel.gameObject.SetActive(true);
+            foreach (var panel in _disablePanels)
+            {
+                panel.gameObject.SetActive(false);
+            }
+
+            foreach (var panel in _enablePanels)
+            {
+                panel.gameObject.SetActive(true);
+            }
         }
     }
 }

@@ -1,44 +1,49 @@
 using UnityEngine;
 
-public class Cell : MonoBehaviour
+namespace SmartStep.Gameplay
 {
-    private int _x;
-    private int _y;
-    private GamePiece _gamePiece;
-
-    public void Initialize(int x, int y)
+    public class Cell : MonoBehaviour
     {
-        _x = x;
-        _y = y;
-    }
+        private int _x;
+        private int _y;
+        private Object _gamePiece;
 
-    public int X => _x;
-    public int Y => _y;
+        public bool IsEmpty => _gamePiece != null;
 
-    public void SpawnGamePiece(int type)
-    {
-        if (_gamePiece != null)
-            Destroy(_gamePiece.gameObject);
-
-        GameObject pieceObj = new GameObject($"GamePiece_{_x}_{_y}");
-        pieceObj.transform.SetParent(transform);
-        pieceObj.transform.localScale = Vector3.one;
-
-        _gamePiece = pieceObj.AddComponent<GamePiece>();
-        _gamePiece.Initialize(type);
-    }
-
-    public GamePiece GetGamePiece()
-    {
-        return _gamePiece;
-    }
-
-    public void ClearGamePiece()
-    {
-        if (_gamePiece != null)
+        public void Initialize(int x, int y)
         {
-            Destroy(_gamePiece.gameObject);
-            _gamePiece = null;
+            _x = x;
+            _y = y;
+        }
+
+        public int X => _x;
+        public int Y => _y;
+
+        public void SpawnGamePiece(int type)
+        {
+            if (_gamePiece != null)
+                Destroy(_gamePiece.gameObject);
+
+            GameObject pieceObj = new GameObject($"GamePiece_{_x}_{_y}");
+            pieceObj.transform.SetParent(transform);
+            pieceObj.transform.localScale = Vector3.one;
+
+            _gamePiece = pieceObj.AddComponent<Object>();
+            _gamePiece.Initialize(type);
+        }
+
+        public Object GetGamePiece()
+        {
+            return _gamePiece;
+        }
+
+        public void ClearGamePiece()
+        {
+            if (_gamePiece != null)
+            {
+                Destroy(_gamePiece.gameObject);
+                _gamePiece = null;
+            }
         }
     }
 }
