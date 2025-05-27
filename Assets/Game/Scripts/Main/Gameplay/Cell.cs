@@ -1,49 +1,56 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-namespace SmartStep.Gameplay
+public class Cell : MonoBehaviour, IPointerClickHandler
 {
-    public class Cell : MonoBehaviour
+    public Vector2Int Coordinates { get; private set; } 
+    public GameObject OccupiedObject { get; private set; }
+    public int Type { get; private set; } = -1;
+    public void Initialize(int x, int y)
     {
-        private int _x;
-        private int _y;
-        private Object _gamePiece;
+        Coordinates = new Vector2Int(x, y);
+        OccupiedObject = null;
+        name = $"Cell_{x}_{y}";
+    }
 
-        public bool IsEmpty => _gamePiece != null;
+    public bool IsEmpty() => OccupiedObject == null;
 
-        public void Initialize(int x, int y)
+    public void SetPosition(GameObject obj, int type)
+    {
+        if (!IsEmpty() || obj == null)
         {
-            _x = x;
-            _y = y;
+            return;
         }
 
-        public int X => _x;
-        public int Y => _y;
+        OccupiedObject = obj;
+        Type = type;
+        obj.transform.SetParent(transform, false);
+        obj.transform.localPosition = Vector3.zero;
+    }
 
-        public void SpawnGamePiece(int type)
+    public void ClearObject()
+    {
+        if (OccupiedObject != null)
         {
-            if (_gamePiece != null)
-                Destroy(_gamePiece.gameObject);
-
-            GameObject pieceObj = new GameObject($"GamePiece_{_x}_{_y}");
-            pieceObj.transform.SetParent(transform);
-            pieceObj.transform.localScale = Vector3.one;
-
-            _gamePiece = pieceObj.AddComponent<Object>();
-            _gamePiece.Initialize(type);
+            Destroy(OccupiedObject);
         }
 
-        public Object GetGamePiece()
-        {
-            return _gamePiece;
-        }
+        OccupiedObject = null;
+    }
 
-        public void ClearGamePiece()
-        {
-            if (_gamePiece != null)
-            {
-                Destroy(_gamePiece.gameObject);
-                _gamePiece = null;
-            }
-        }
+    // ќбрабатывает клик по €чейке, передава€ событие менеджеру.
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        GridManager.Instance.OnCellClicked(this);
+    }
+
+    public void SetOccupiedObject(GameObject newOccupiedObject)
+    {
+        OccupiedObject = newOccupiedObject;
+    }
+
+    public void SetType(int newType)
+    {
+        Type = newType;
     }
 }
