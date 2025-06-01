@@ -13,6 +13,7 @@ public class ScoreCounter : MonoBehaviour
     private int _targetScore;
     private int _baseScore = 10;
     private int _bonusPerCount = 1;
+    private int _bonusScorePerStep = 5;
 
     public void Init(int targetScore)
     {
@@ -33,7 +34,7 @@ public class ScoreCounter : MonoBehaviour
     private void Calculate(int clearedObjectsCount)
     {
         int additionalPoints = _bonusPerCount * (clearedObjectsCount * (clearedObjectsCount - 1) / 2);
-        int getScore = clearedObjectsCount * _baseScore + additionalPoints;
+        int getScore = clearedObjectsCount * _baseScore + additionalPoints + _bonusScorePerStep;
 
         _totalClearedObjects += clearedObjectsCount;
         _totalScore += getScore;
