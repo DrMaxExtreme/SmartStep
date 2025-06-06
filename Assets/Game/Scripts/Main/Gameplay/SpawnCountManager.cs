@@ -9,7 +9,7 @@ public class SpawnCountManager : MonoBehaviour
 
     [SerializeField] private GridManager _gridManager;
 
-    [SerializeField] private int _stepsForLevelUp = 25;
+    [SerializeField] private int _stepsForIncreaseSpawnCount = 25;
     [SerializeField] private int _startCountSpawn = 4;
     [SerializeField] private int _maxSpawnCount = 6;
 
@@ -33,7 +33,7 @@ public class SpawnCountManager : MonoBehaviour
 
         _doneStepsCount++;
 
-        if (_doneStepsCount == _stepsForLevelUp)
+        if (_doneStepsCount == _stepsForIncreaseSpawnCount)
         {
             StartCoroutine(HandleLevelUp());
         }
@@ -55,8 +55,8 @@ public class SpawnCountManager : MonoBehaviour
     }
     private IEnumerator AnimateFill(bool isLastStep)
     {
-        float startValue = ((float)_doneStepsCount - 1) / _stepsForLevelUp;
-        float endValue = (float)_doneStepsCount / _stepsForLevelUp;
+        float startValue = ((float)_doneStepsCount - 1) / _stepsForIncreaseSpawnCount;
+        float endValue = (float)_doneStepsCount / _stepsForIncreaseSpawnCount;
         float elapsed = 0f;
 
         _fillFirst.fillAmount = endValue;

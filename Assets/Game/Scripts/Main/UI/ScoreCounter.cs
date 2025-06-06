@@ -8,12 +8,13 @@ public class ScoreCounter : MonoBehaviour
     [SerializeField] private GridManager _gridManager;
     [SerializeField] private ScoreField _scoreFields;
 
+    [SerializeField] private int _baseScore = 25;
+    [SerializeField] private int _bonusPerCount = 5;
+    [SerializeField] private int _bonusScorePerStep = 20;
+
     private int _totalClearedObjects = 0;
     private int _totalScore = 0;
     private int _targetScore;
-    private int _baseScore = 10;
-    private int _bonusPerCount = 1;
-    private int _bonusScorePerStep = 5;
 
     public void Init(int targetScore)
     {

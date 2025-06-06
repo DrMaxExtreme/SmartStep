@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.37312, g: 0.38074034, b: 0.35872734, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -17418,9 +17418,9 @@ RectTransform:
   - {fileID: 390150968}
   m_Father: {fileID: 1729221130}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 274.99994, y: -105.00002}
   m_SizeDelta: {x: 550, y: 170.8}
   m_Pivot: {x: 0.49999988, y: 0.49999988}
 --- !u!114 &52853788
@@ -23283,7 +23283,7 @@ GameObject:
   - component: {fileID: 67074443}
   - component: {fileID: 67074444}
   m_Layer: 5
-  m_Name: Perks Group
+  m_Name: Bonuses Group
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24030,8 +24030,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 185.86719, y: -259}
-  m_SizeDelta: {x: 233.4556, y: 90.1073}
+  m_AnchoredPosition: {x: 185.86719, y: -258.99988}
+  m_SizeDelta: {x: 233.4556, y: 66.187}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &78105481
 MonoBehaviour:
@@ -63216,7 +63216,7 @@ GameObject:
   - component: {fileID: 304516683}
   - component: {fileID: 304516682}
   m_Layer: 5
-  m_Name: Perk Bonus Score
+  m_Name: Bonus Bonus Score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -63240,10 +63240,10 @@ RectTransform:
   - {fileID: 530067383}
   m_Father: {fileID: 67074443}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 255, y: -724.99}
-  m_SizeDelta: {x: 320, y: 410}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &304516682
 MonoBehaviour:
@@ -69533,9 +69533,9 @@ RectTransform:
   - {fileID: 337466221}
   m_Father: {fileID: 1729221130}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 274.99994, y: -735}
   m_SizeDelta: {x: 550, y: 170.8}
   m_Pivot: {x: 0.49999988, y: 0.49999988}
 --- !u!114 &329090566
@@ -81116,7 +81116,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 5
+  m_text: '0
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 17b5afe7f5621044d97241f472123801, type: 2}
   m_sharedMaterial: {fileID: 5568139486216784236, guid: 17b5afe7f5621044d97241f472123801, type: 2}
@@ -113739,9 +113741,9 @@ RectTransform:
   - {fileID: 2124974869}
   m_Father: {fileID: 1729221130}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 274.99994, y: -945}
   m_SizeDelta: {x: 550, y: 170.8}
   m_Pivot: {x: 0.49999988, y: 0.49999988}
 --- !u!114 &538219938
@@ -119665,7 +119667,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 0
+  m_text: 10
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 17b5afe7f5621044d97241f472123801, type: 2}
   m_sharedMaterial: {fileID: 5568139486216784236, guid: 17b5afe7f5621044d97241f472123801, type: 2}
@@ -127161,7 +127163,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -66.626686, y: -329.22183}
+  m_AnchoredPosition: {x: -66.632, y: -317.26}
   m_SizeDelta: {x: 245.7394, y: 50.3308}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &593745910
@@ -127184,7 +127186,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (+1)  (+2)
+  m_text: (+6) (+12)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4338825a100b73d4983ee7449a1245d1, type: 2}
   m_sharedMaterial: {fileID: 7746803525459343344, guid: 4338825a100b73d4983ee7449a1245d1, type: 2}
@@ -129516,10 +129518,10 @@ RectTransform:
   - {fileID: 126333810}
   m_Father: {fileID: 67074443}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 615, y: -724.99}
-  m_SizeDelta: {x: 320, y: 410}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &619803322
 MonoBehaviour:
@@ -174449,7 +174451,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gridManager: {fileID: 1550123828}
-  _stepsForLevelUp: 20
+  _stepsForIncreaseSpawnCount: 20
   _startCountSpawn: 4
   _maxSpawnCount: 6
   _fillFirst: {fileID: 1961976950}
@@ -183831,7 +183833,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -2.261, y: -408.58}
+  m_AnchoredPosition: {x: 0, y: -460}
   m_SizeDelta: {x: 600.67, y: 108.3827}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &948035865
@@ -183854,8 +183856,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Base score - \u043E\u0447\u043A\u0438 \u0437\u0430 \u043E\u0434\u0438\u043D
-    \u043E\u0431\u044A\u0435\u043A\u0442"
+  m_text: Base score - for each object collected
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9a2157e1f9c4c4d38841fbb92558f587, type: 2}
   m_sharedMaterial: {fileID: -6360588970910393389, guid: 9a2157e1f9c4c4d38841fbb92558f587, type: 2}
@@ -183890,7 +183891,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
+  m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -199511,9 +199512,9 @@ RectTransform:
   - {fileID: 1241496594}
   m_Father: {fileID: 1729221130}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 274.99994, y: -315.00003}
   m_SizeDelta: {x: 550, y: 170.8}
   m_Pivot: {x: 0.49999988, y: 0.49999988}
 --- !u!114 &1035676940
@@ -213643,7 +213644,7 @@ GameObject:
   - component: {fileID: 1124343335}
   - component: {fileID: 1124343334}
   m_Layer: 5
-  m_Name: Perk Base Score
+  m_Name: Bonus Base Score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -213667,10 +213668,10 @@ RectTransform:
   - {fileID: 580744113}
   m_Father: {fileID: 67074443}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 255, y: -254.98999}
-  m_SizeDelta: {x: 320, y: 410}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1124343334
 MonoBehaviour:
@@ -268480,7 +268481,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1400339256
 RectTransform:
   m_ObjectHideFlags: 0
@@ -281689,7 +281690,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.0052490234}
+  m_AnchoredPosition: {x: 0, y: -0.0053710938}
   m_SizeDelta: {x: 0, y: 0.0106}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1475775972
@@ -287715,7 +287716,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -2.261, y: -560.35}
+  m_AnchoredPosition: {x: 0, y: -611.77}
   m_SizeDelta: {x: 600.67, y: 195.16}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1492529941
@@ -287738,12 +287739,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Combo score - \u0434\u043E\u043F\u043E\u043B\u043D\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0435
-    \u043E\u0447\u043A\u0438 \u0437\u0430 \u043A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u043E
-    \u0441\u043E\u0431\u0440\u0430\u043D\u043D\u044B\u0445 \u043E\u0431\u044A\u0435\u043A\u0442\u043E\u0432.
-    \u0417\u0430 \u043E\u0434\u0438\u043D \u043E\u0431\u044A\u0435\u043A\u0442 +10
-    \u043E\u0447\u043A\u043E\u0432, \u0437\u0430 \u0432\u0442\u043E\u0440\u043E\u0439
-    \u043E\u0431\u044A\u0435\u043A\u0442 10 (+1) = 11 \u043E\u0447\u043A\u043E\u0432..."
+  m_text: Combo score - for several objects. For example, +1 for the second object,
+    +2 for the third...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9a2157e1f9c4c4d38841fbb92558f587, type: 2}
   m_sharedMaterial: {fileID: -6360588970910393389, guid: 9a2157e1f9c4c4d38841fbb92558f587, type: 2}
@@ -287778,7 +287775,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
+  m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -290336,9 +290333,9 @@ RectTransform:
   - {fileID: 592807731}
   m_Father: {fileID: 1729221130}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 274.99994, y: -525}
   m_SizeDelta: {x: 550, y: 170.8}
   m_Pivot: {x: 0.49999988, y: 0.49999988}
 --- !u!114 &1520310733
@@ -295710,6 +295707,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _gridManager: {fileID: 1550123828}
   _scoreFields: {fileID: 571859475}
+  _baseScore: 20
+  _bonusPerCount: 6
+  _bonusScorePerStep: 20
 --- !u!4 &1522005010
 Transform:
   m_ObjectHideFlags: 0
@@ -296597,7 +296597,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -2.261, y: -836.10693}
+  m_AnchoredPosition: {x: 0, y: -887.53}
   m_SizeDelta: {x: 600.67, y: 139.5966}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1534595133
@@ -296620,10 +296620,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u041D\u0430\u043F\u0440\u0438\u043C\u0435\u0440, \u0435\u0441\u043B\u0438
-    \u0438\u0433\u0440\u043E\u043A \u0437\u0430 \u0445\u043E\u0434 \u0441\u043E\u0431\u0440\u0430\u043B
-    4 \u043E\u0431\u044A\u0435\u043A\u0442\u0430, \u0442\u043E \u0437\u0430\u0440\u0430\u0431\u043E\u0442\u0430\u0435\u0442
-    10+11+12+13+5=51 \u043E\u0447\u043A\u043E"
+  m_text: For example, at the maximum bonus level, if a player collects 4 objects
+    in one step, they will earn 20+26+32+38+20=136 points
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9a2157e1f9c4c4d38841fbb92558f587, type: 2}
   m_sharedMaterial: {fileID: -6360588970910393389, guid: 9a2157e1f9c4c4d38841fbb92558f587, type: 2}
@@ -296658,7 +296656,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
+  m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -297197,7 +297195,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: More Steps
+  m_text: Steps
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 718a678937eaf1f45a1ebb2344683f24, type: 2}
   m_sharedMaterial: {fileID: 3074828514974314926, guid: 718a678937eaf1f45a1ebb2344683f24, type: 2}
@@ -298318,7 +298316,7 @@ GameObject:
   - component: {fileID: 1563792237}
   - component: {fileID: 1563792236}
   m_Layer: 5
-  m_Name: Perk Combo Score
+  m_Name: Bonus Combo Score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -298342,10 +298340,10 @@ RectTransform:
   - {fileID: 262171804}
   m_Father: {fileID: 67074443}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 615, y: -254.98999}
-  m_SizeDelta: {x: 320, y: 410}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1563792236
 MonoBehaviour:
@@ -322022,7 +322020,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -2.261, y: -712.12}
+  m_AnchoredPosition: {x: 0, y: -763.54}
   m_SizeDelta: {x: 600.67, y: 108.3827}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1706580838
@@ -322045,8 +322043,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Bonus score - \u0434\u043E\u043F\u043E\u043B\u043D\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0435
-    \u043E\u0447\u043A\u0438 \u0437\u0430 \u0445\u043E\u0434"
+  m_text: Bonus score - per step
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9a2157e1f9c4c4d38841fbb92558f587, type: 2}
   m_sharedMaterial: {fileID: -6360588970910393389, guid: 9a2157e1f9c4c4d38841fbb92558f587, type: 2}
@@ -322081,7 +322078,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
+  m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -329165,7 +329162,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1729221130
 RectTransform:
   m_ObjectHideFlags: 0
@@ -349957,8 +349954,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -120.91655, y: -259}
-  m_SizeDelta: {x: 354.3152, y: 90.1073}
+  m_AnchoredPosition: {x: -120.92, y: -259}
+  m_SizeDelta: {x: 354.3152, y: 66.187}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1830821549
 MonoBehaviour:
@@ -349980,7 +349977,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 10 + 11 + 12 ...
+  m_text: 20 + 26 + 32 ...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 605433b68313d491a8ab88bc03a41651, type: 2}
   m_sharedMaterial: {fileID: 2830636965969884548, guid: 605433b68313d491a8ab88bc03a41651, type: 2}
