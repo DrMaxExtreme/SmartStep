@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7135629271376999601}
-  - component: {fileID: 4377899702861957190}
+  - component: {fileID: 6143750329919669351}
   m_Layer: 5
   m_Name: Cell
   m_TagString: Untagged
@@ -36,7 +36,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 128, y: 128}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &4377899702861957190
+--- !u!114 &6143750329919669351
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -45,6 +45,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 1136037856038198422}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55ece976002d21940bdd3ac230ef2c68, type: 3}
+  m_Script: {fileID: 11500000, guid: e79eaf65ea7e15f48869a289e5fb499c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

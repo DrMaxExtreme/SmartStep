@@ -12,14 +12,14 @@ public class GridManager : MonoBehaviour
 
     [SerializeField] private SpawnCountManager _spawnCountManager;
 
-    [Header("Настройки сетки")]
+    [Header("Grid settings")]
     [SerializeField] private RectTransform _gridContainer;
     [SerializeField] private GameObject _cellPrefab;
     [SerializeField] private GameObject[] _spawnPrefabs;
     [SerializeField] private int _width = 7;
     [SerializeField] private int _height = 10;
 
-    [Tooltip("Число заполненных снизу рядов при старте")]
+    [Tooltip("Count of filled lines")]
     [SerializeField] private int _initialFillRows = 5;
 
     private int _newObjectsPerStep;

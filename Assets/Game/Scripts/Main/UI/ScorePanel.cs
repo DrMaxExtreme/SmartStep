@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class ScorePanel : MonoBehaviour
 {
-    [SerializeField] private ScoreCounter _scoreCounter;
+    [SerializeField] private ScoreManager _scoreManager;
     [SerializeField] private SpawnCountManager _spawnCountManager;
 
     [SerializeField] private TMP_Text _totalClearedObjectsText;
@@ -76,15 +76,15 @@ public class ScorePanel : MonoBehaviour
 
     private void OnEnable()
     {
-        _scoreCounter.ScoreChanged += UpdateScoreTexts;
+        _scoreManager.ScoreChanged += UpdateScoreTexts;
         _spawnCountManager.Changed += UpdateTextSpawnCount;
         Init(1500, 4);//заглушка. init должен вызываться из LevelManager
-        _scoreCounter.Init(1500);
+        _scoreManager.Init(1500);
     }
 
     private void OnDisable()
     {
-        _scoreCounter.ScoreChanged -= UpdateScoreTexts;
+        _scoreManager.ScoreChanged -= UpdateScoreTexts;
         _spawnCountManager.Changed -= UpdateTextSpawnCount;
     }
 }
