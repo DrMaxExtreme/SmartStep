@@ -8,6 +8,7 @@ public class SpawnCountManager : MonoBehaviour
     public event Action<int> Changed;
 
     [SerializeField] private GridManager _gridManager;
+    [SerializeField] private AnimationTimes _animationTimes;
 
     [SerializeField] private int _stepsForIncreaseSpawnCount = 25;
     [SerializeField] private int _startCountSpawn = 4;
@@ -15,9 +16,6 @@ public class SpawnCountManager : MonoBehaviour
 
     [SerializeField] private MPImage _fillFirst;
     [SerializeField] private MPImage _fillSecond;
-
-    private float _durationAnimation = 0.266f;
-    private float _delayAnimation = 0.133f;
 
     private int _doneStepsCount;
     private int _spawnCount;
@@ -61,12 +59,12 @@ public class SpawnCountManager : MonoBehaviour
 
         _fillFirst.fillAmount = endValue;
 
-        yield return new WaitForSeconds(_delayAnimation);
+        yield return new WaitForSeconds(_animationTimes.Delay);
 
-        while (elapsed < _durationAnimation)
+        while (elapsed < _animationTimes.Duration)
         {
             elapsed += Time.deltaTime;
-            float normalizedTime = Mathf.Clamp01(elapsed / _durationAnimation);
+            float normalizedTime = Mathf.Clamp01(elapsed / _animationTimes.Duration);
             _fillSecond.fillAmount = Mathf.Lerp(startValue, endValue, normalizedTime);
             yield return null;
         }

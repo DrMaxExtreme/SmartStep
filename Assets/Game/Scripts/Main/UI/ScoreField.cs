@@ -9,15 +9,7 @@ public class ScoreField : MonoBehaviour
 
     private float _targetScore;
 
-    private AnimationHelper _animator;
-
-    [SerializeField] private float _durationAnimation = 0.266f;
-    [SerializeField] private float _delayAnimation = 0.133f;
-
-    private void Awake()
-    {
-        _animator = new AnimationHelper(_durationAnimation, _delayAnimation);
-    }
+    private AnimationHelper _animator = new AnimationHelper();
 
     public void Init(int targetScore)
     {
