@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PlayerStatsCalculator
+public class PlayerStatsCalculator // Разделить обязанности наотдельные классы: для золота, для ранга и т.д.
 {
     [SerializeField] private PlayerData _playerData;
 
@@ -23,15 +23,5 @@ public class PlayerStatsCalculator
             return 0;
 
         return experience;
-    }
-
-    public int CalculateRank(int score, int targetScore)
-    {
-
-    }
-
-    public int CalculateTargetScore(int targetScore, int rank, int referenceRank, int referenceTargetScore)
-    {
-
     }
 }

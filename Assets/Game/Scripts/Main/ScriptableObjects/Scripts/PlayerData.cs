@@ -55,7 +55,7 @@ public class PlayerData : ScriptableObject
 
     public float AverageStepsPerGame => _averageStepsPerGame;
     public float AverageCollectPerStep => _averageCollectPerStep;
-    public float AverageCollectPerGame => _averageCollectPerGame
+    public float AverageCollectPerGame => _averageCollectPerGame;
 
     // === Add new game result ===
     public void AddGameResult(int steps, int collected)
@@ -170,7 +170,7 @@ public class PlayerData : ScriptableObject
 
     public void ChangeRank(int score)
     {
-        _rank += _playerStatsCalculator.CalculateRank(score, _targetScore);
-        _targetScore += _playerStatsCalculator.CalculateTargetScore(_targetScore, _rank, ReferenceRank, ReferenceTargetScore);
+        _rank += _playerStatsCalculator.CalculateRank(score, _targetScore, ReferenceRank, ReferenceTargetScore, MinRankChange);
+        _targetScore += _playerStatsCalculator.CalculateTargetScore(_rank, ReferenceRank, ReferenceTargetScore);
     }
 }
