@@ -25,7 +25,7 @@ public class GamesStatisticData : ScriptableObject
 
     [SerializeField] private List<GameResult> _lastGames = new List<GameResult>();
 
-    public int HighestScore => _highestScore;
+    public int HighestScore => _highestScore; // добавить метод подписаный на событие rankChange
     public int HighestRank => _highestRank;
     public int TotalGames => _totalGames;
     public float AverageStepsPerGame => _averageStepsPerGame;
