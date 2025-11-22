@@ -61,7 +61,7 @@ public class RankCalculator
         }
         else
         {
-            deltaRank = 250f; // ровно на границе
+            deltaRank = 250f;
         }
 
         return Mathf.RoundToInt(deltaRank);
